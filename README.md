@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ReqSync
+
+## ReqSync is a platform designed to transform your inputs—text, voice, and documents—into actionable business requirements through powerful analysis, risk assessment, and entity identification. Built to streamline project planning and decision-making, ReqSync leverages state-of-the-art AI technologies.
+
+## Features
+
+	•	Multi-Input Processing: Handle text, voice recordings, and documents seamlessly.
+	•	Advanced Analysis: Perform sentiment analysis, risk assessment, and entity extraction.
+	•	Business Requirement Generation: Convert inputs into structured, actionable requirements.
+	•	AI-Powered: Powered by OpenAI services, including ChatGPT, Whisper, and Vision.
+	•	Export Options: Share results easily with exportable formats like JSON and PDF.
+
+## Tech Stack
+
+	•	Frontend: Next.js
+	•	API Framework: Hono using Next.js routes
+	•	Database: Drizzle with libSQL
+	•	Authentication: Clerk
+	•	AI Services: OpenAI API (ChatGPT, Whisper, Vision)
+	•	Documentation: VitePress
+
+## Development Workflow
+
+	1.	Documentation: Built with VitePress.
+	2.	Testing:
+	•	Unit testing with Vitest.
+	•	End-to-end testing with Playwright.
+	3.	Database Setup: Drizzle ORM with libSQL.
+	4.	API Development: Modular and scalable endpoints using Hono.
+	5.	Frontend: User-friendly interface with Next.js.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+	•	Node.js (v18 or higher recommended)
+	•	npm or Bun as the package manager
+
+### Installation
+
+	1.	Clone the repository:
+
+git clone https://github.com/your-username/reqsync.git
+
+
+	2.	Navigate to the project directory:
+
+cd reqsync
+
+
+	3.	Install dependencies:
+
+npm install
+
+
+
+### Running Locally
+
+	1.	Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+	2.	Open your browser at http://localhost:3000.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Testing
 
-## Learn More
+	•	Run unit tests:
 
-To learn more about Next.js, take a look at the following resources:
+npm run test
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+	•	Run end-to-end tests:
 
-## Deploy on Vercel
+npm run e2e
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Roadmap
+
+	1.	Documentation with VitePress.
+	2.	Basic API setup for text, voice, and document processing.
+	3.	Database integration for input and output management.
+	4.	Frontend design and integration.
+	5.	Additional features for export and visualization.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+ReqSync is licensed under the AGPL v3. See the LICENSE file for more information.
+
